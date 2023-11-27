@@ -1,7 +1,23 @@
+@keyframes start {
+    from {
+        transform: scale(0);
+    } to {
+        transform: scale(1);
+    }
+}
+
 #app {
     min-width: 100vw;
     min-height: 100vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: start 1s ease-in-out;
+}
