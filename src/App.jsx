@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
-import Navbar from './components/Navbar'
-import HomePage from './pages/HomePage'
+import {
+  Outlet,
+} from "react-router-dom"
 import Loader from './components/Loader'
+import Navbar from './components/Navbar'
 import styles from './scss/App.module.scss'
 
 
@@ -21,7 +23,7 @@ const App = () => {
         ) : (
           <div id={styles['main']}>
             <Navbar />
-            <HomePage />
+            <Outlet />
           </div>
         )
       }

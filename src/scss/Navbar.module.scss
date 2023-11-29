@@ -47,6 +47,18 @@ nav {
     margin-right: 3rem;
 }
 
+.active {
+    color: $secondary-color;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+.pending {
+    color: rgba($secondary-color, 0.1);
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
 .link:hover {
     color: $secondary-color;
 }

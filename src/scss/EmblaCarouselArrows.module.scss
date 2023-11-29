@@ -1,0 +1,23 @@
+@import 'variables';
+
+
+.embla__button {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.embla__button:disabled {
+    opacity: 0.3;
+}
+.embla__button__svg {
+    width: 1rem;
+}
+  
