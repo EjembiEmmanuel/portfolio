@@ -7,9 +7,9 @@ import styles from '../scss/Navbar.module.scss'
 const Navbar = () => {
     const addNavClass = (isActive, isPending) => {
         if (isActive) {
-            return (styles['link'], styles['active'])
+            return `${styles['link']} ${styles['active']}`
         } else if (isPending) {
-            return (styles['link'], styles['pending'])
+            return `${styles['link']} ${styles['pending']}`
         } else {
             return styles['link']
         }

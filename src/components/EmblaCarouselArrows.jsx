@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import styles from '../scss/EmblaCarouselArrows.module.scss'
 
 export const PrevButton = (props) => {
@@ -38,4 +39,12 @@ export const NextButton = (props) => {
       {children}
     </button>
   )
+}
+
+PrevButton.propTypes = {
+  children: PropTypes.node
+}
+
+NextButton.propTypes = {
+  children: PropTypes.node
 }

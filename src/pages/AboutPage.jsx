@@ -1,4 +1,5 @@
 import EmblaCarousel from "../components/EmblaCarousel"
+import skills from "../skills"
 import styles from "../scss/AboutPage.module.scss"
 
   
@@ -6,7 +7,7 @@ import styles from "../scss/AboutPage.module.scss"
 const AboutPage = () => {
 
     const OPTIONS = { slidesToScroll: 2, containScroll: 'trimSnaps',loop: true, dragFree: true }
-    const SLIDE_COUNT = 15
+    const SLIDE_COUNT = skills.length
     const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
     return (
@@ -18,7 +19,7 @@ const AboutPage = () => {
                     <p>In my spare time, I enjoy learning new technologies and exploring the latest web development trends. Im&apos; always eager to learn and grow, and I&apos;m currently delving deeper into the world of Front-End Web Development.</p>
                     <p>Feel free to browse through my portfolio to see the work I&apos;ve done, and don&apos;t hesitate to get in touch if you&apos;d like to collaborate on a project or learn more about my skills and experience.</p>
                 </div>
-                <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} skills={skills} />
             </div>
         </>
     )

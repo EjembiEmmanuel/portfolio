@@ -1,24 +1,23 @@
+import PropTypes from 'prop-types'
 import { useState, useCallback, useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { PrevButton, NextButton } from './EmblaCarouselArrows'
-import skills from '../skills'
 import styles from '../scss/EmblaCarousel.module.scss'
 
 const EmblaCarousel = (props) => {
-  const { slides, options } = props
+  const { slides, options, skills } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({ delay: 2000 })])
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
 
-  const scrollPrev = useCallback(
-    () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
-  )
-  const scrollNext = useCallback(
-    () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
-  )
+  const scrollPrev = useCallback(() => {
+    emblaApi && emblaApi.scrollPrev()
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    emblaApi && emblaApi.scrollNext()
+   }, [emblaApi])
 
   const onSelect = useCallback((emblaApi) => {
     setPrevBtnDisabled(!emblaApi.canScrollPrev())
@@ -61,6 +60,12 @@ const EmblaCarousel = (props) => {
       </div>
     </div>
   )
+}
+
+EmblaCarousel.propTypes = {
+  slides: PropTypes.number.isRequired,
+  options: PropTypes.object.isRequired,
+  skills: PropTypes.object.isRequired,
 }
 
 export default EmblaCarousel
