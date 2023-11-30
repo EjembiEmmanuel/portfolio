@@ -28,7 +28,9 @@ const Navbar = () => {
                     <NavLink className={({ isActive, isPending }) =>
                         addNavClass(isActive, isPending)
                     } to='about'>About</NavLink>
-                    <NavLink className={styles['link']} to="">Projects</NavLink>
+                    <NavLink className={({ isActive, isPending }) =>
+                        addNavClass(isActive, isPending)
+                    } to='portfolio'>Portfolio</NavLink>
                     <NavLink className={styles['link']} href="">Resume</NavLink>
                 </div>
             </div>

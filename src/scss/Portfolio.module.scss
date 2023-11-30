@@ -1,0 +1,12 @@
+@import 'variables';
+
+
+#portfolio-page {
+    min-width: inherit;
+    min-height: inherit;
+    box-sizing: border-box; 
+    background-color: $accent-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

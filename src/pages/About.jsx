@@ -1,10 +1,10 @@
 import EmblaCarousel from "../components/EmblaCarousel"
 import skills from "../skills"
-import styles from "../scss/AboutPage.module.scss"
+import styles from "../scss/About.module.scss"
 
   
 
-const AboutPage = () => {
+const About = () => {
 
     const OPTIONS = { slidesToScroll: 2, containScroll: 'trimSnaps',loop: true, dragFree: true }
     const SLIDE_COUNT = skills.length
@@ -25,4 +25,4 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage
+export default About

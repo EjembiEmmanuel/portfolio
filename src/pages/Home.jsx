@@ -6,10 +6,10 @@ import gitHubIcon from "../assets/icons/github.svg"
 import xIcon from "../assets/icons/x-twitter.svg"
 import linkedInIcon from "../assets/icons/linkedin.svg"
 import emailIcon from "../assets/icons/envelope-solid.svg"
-import styles from "../scss/HomePage.module.scss"
+import styles from "../scss/Home.module.scss"
 
 
-const HomePage = () => {
+const Home = () => {
     const particlesInit = useCallback(async engine => {
         await loadSlim(engine);
     }, []);
@@ -98,4 +98,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default Home
