@@ -1,0 +1,120 @@
+@import 'variables';
+
+
+.project {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: $accent-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+}
+
+.project-reverse {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: $accent-color;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5rem;
+}
+
+.img-area {
+    width: 65%;
+}
+
+.img-area-reverse {
+    width: 65%;
+}
+
+.img-area > img {
+    width: 100%;
+    border-radius: 10px;
+    transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.img-area-reverse > img {
+    width: 100%;
+    border-radius: 10px;
+    transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg);
+    transition: all 0.3s ease;
+}
+
+.img-area > img:hover {
+    transform: perspective(800px) rotateY(-10deg) scale(.9) rotateX(-5deg);
+}
+
+.img-area-reverse > img:hover {
+    transform: perspective(800px) rotateY(10deg) scale(.9) rotateX(-5deg);
+}
+
+.details-area {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-area-reverse {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title > h2 {
+    color: $secondary-color;
+}
+
+.project-desc > p {
+    color: $primary-color;
+    text-align: justify;
+}
+
+.project-desc > hr {
+    opacity: .6;
+}
+
+.project-desc :nth-child(3) {
+    font-family: $roboto-condensed-italic;
+}
+
+.project-links {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-links > button {
+    background-color: $secondary-color;
+    color: $primary-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.7rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-links > button:hover {
+    transform: scale(1.1);
+}
+
+.project-links > button a {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-links > button img {
+    width: 1rem;
+    margin-left: 0.5rem;
+}

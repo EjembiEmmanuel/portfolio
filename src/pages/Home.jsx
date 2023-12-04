@@ -14,17 +14,12 @@ const Home = () => {
         await loadSlim(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async container => {
-        console.log(container);
-    }, []);
-
     return (
         <>
             <Particles
                 id="tsparticles"
                 className={styles['tsparticles']}
                 init={particlesInit}
-                loaded={particlesLoaded}
                 options={{
                     background: {
                         color: {

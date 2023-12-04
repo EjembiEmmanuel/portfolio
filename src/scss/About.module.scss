@@ -2,8 +2,8 @@
 
 
 #about-page {
-    min-width: inherit;
-    min-height: inherit;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box; 
     background-color: $accent-color;
     display: flex;
@@ -13,17 +13,20 @@
 
 #about {
     width: 60rem;
-    margin-top: 8rem;
+    margin-top: 4rem;
     margin-left: 5rem;
 }
 
 #about :nth-child(1) {
     color: $primary-color;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #about :nth-child(1) span {
     color: $secondary-color;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 #about :nth-child(2) {

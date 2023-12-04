@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     min-width: 0;
+    width: -moz-fit-content;
     width: fit-content;
     padding: $slide-spacing;
     margin-right: 1rem;
@@ -52,8 +53,8 @@
 .embla__slide__number > span,
 .embla__slide__text > span {
     color: $primary-color;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     font-size: 1rem;
     display: block;
 }

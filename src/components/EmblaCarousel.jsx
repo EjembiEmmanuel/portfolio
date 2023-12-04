@@ -63,9 +63,9 @@ const EmblaCarousel = (props) => {
 }
 
 EmblaCarousel.propTypes = {
-  slides: PropTypes.number.isRequired,
+  slides: PropTypes.array.isRequired,
   options: PropTypes.object.isRequired,
-  skills: PropTypes.object.isRequired,
+  skills: PropTypes.array.isRequired,
 }
 
 export default EmblaCarousel

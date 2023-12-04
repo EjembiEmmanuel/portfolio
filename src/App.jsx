@@ -21,10 +21,12 @@ const App = () => {
       {loading ? (
           <Loader />
         ) : (
-          <div id={styles['main']}>
+          <>
             <Navbar />
-            <Outlet />
-          </div>
+            <div id={styles['main']}>
+              <Outlet />
+            </div>
+          </>
         )
       }
     </div>

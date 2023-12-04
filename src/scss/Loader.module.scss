@@ -1,8 +1,8 @@
 @import 'variables';
 
 @keyframes loading {
-    0% { width: 0; }
-    100% { width: 100%; }
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
 }
 
 #loader {
@@ -15,19 +15,10 @@
 }
 
 #progress-bar {
-    background-color: $accent-color;
+    background-color: $primary-color;
     position: relative;
     height: 5px;
-    width: 10%;
-}
-
-#progress-bar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: $primary-color;
-    border-radius: 20px;
+    width: 20%;
+    transform-origin: left;
     animation: loading 3s linear infinite;
 }
