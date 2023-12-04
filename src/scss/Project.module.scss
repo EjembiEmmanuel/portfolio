@@ -10,6 +10,7 @@
     flex-direction: row;
     align-items: center;
     padding: 5rem;
+
 }
 
 .project-reverse {
@@ -37,6 +38,9 @@
     transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
     transition: all 0.3s ease;
     z-index: 0;
+    box-shadow: 0 30px 123px -25px hsla(225, 2%, 62%, .42), 0 35px 75px -35px hsla(225, 2%, 62%, .08);
+    -webkit-filter: blur(0);
+    filter: blur(0);
 }
 
 .img-area-reverse > img {
@@ -44,14 +48,20 @@
     border-radius: 10px;
     transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg);
     transition: all 0.3s ease;
+    z-index: 0;
+    box-shadow: 0 30px 123px -25px hsla(225, 2%, 62%, .42), 0 35px 75px -35px hsla(225, 2%, 62%, .08);
+    -webkit-filter: blur(0);
+    filter: blur(0);
 }
 
 .img-area > img:hover {
     transform: perspective(800px) rotateY(-10deg) scale(.9) rotateX(-5deg);
+    box-shadow: 0 19px 67px -38px hsla(225,2%,62%,.8);
 }
 
 .img-area-reverse > img:hover {
     transform: perspective(800px) rotateY(10deg) scale(.9) rotateX(-5deg);
+    box-shadow: 0 19px 67px -38px hsla(225,2%,62%,.8);
 }
 
 .details-area {
