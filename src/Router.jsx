@@ -3,7 +3,9 @@ import App from "./App"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Portfolio from "./pages/Portfolio"
+import Resume from "./pages/Resume"
 import ErrorPage from "./ErrorPage"
+
 
 const Router = () => {
     const router = createBrowserRouter([
@@ -26,6 +28,10 @@ const Router = () => {
                         {
                             path: "portfolio",
                             element: <Portfolio />,
+                        },
+                        {
+                            path: "resume",
+                            element: <Resume />,
                         },
                     ],
                 },
