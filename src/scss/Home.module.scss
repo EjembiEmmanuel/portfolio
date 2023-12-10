@@ -20,7 +20,7 @@
 }
 
 #profile-img {
-    width: 200px;
+    width: 11rem;
     border-radius: 50%;
 }
 
@@ -54,4 +54,23 @@
     position: fixed;
     inset: 0; 
     z-index: -10
+}
+
+
+@media screen and (max-width: 1224px) {
+    #name {
+        font-family: "Nunito";
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #job {
+        font-family: $nunito;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
 }
