@@ -1,5 +1,12 @@
 @import 'variables';
 
+
+@keyframes animateLinks {
+    0% { transform: translateX(-20%); }
+    100% { transform: translateX(0%); }
+}
+
+
 nav {
     width: 100%;
     background-color: $accent-color;
@@ -62,4 +69,65 @@ nav {
 
 .link:hover {
     color: $secondary-color;
+}
+
+@media screen and (max-width: 1224px) {
+    nav {
+        width: 100%;
+        background-color: $accent-color;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem; 
+        z-index: 1;
+    }
+
+    #logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #links-container {
+        background-color: $accent-color;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #links {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        transform-origin: right;
+        animation: animateLinks .4s linear;
+    }
+
+    .link {
+        color: $primary-color;
+        text-decoration: none;
+        margin-top: 2rem;
+        margin-right: 3rem;
+    }
+
+    .active {
+        color: $secondary-color;
+        text-decoration: none;
+        margin-right: 3rem;
+    }
+    
+    .pending {
+        color: rgba($secondary-color, 0.1);
+        text-decoration: none;
+        margin-right: 3rem;
+    }
+    
+    .link:hover {
+        color: $secondary-color;
+    }
 }
