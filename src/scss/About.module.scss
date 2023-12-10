@@ -44,3 +44,40 @@
     color: $primary-color;
     font-size: 1rem;
 }
+
+@media screen and (max-width: 1224px) {
+    #about {
+        width: 22rem;
+        margin-top: 4rem;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    #about :nth-child(1) {
+        color: $primary-color;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    #about :nth-child(1) span {
+        color: $secondary-color;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    #about :nth-child(2) {
+        color: $primary-color;
+        font-size: 0.8rem;
+        font-family: $roboto-condensed-italic;
+    }
+    
+    #about :nth-child(3) {
+        color: $primary-color;
+        font-size: 0.8rem;
+    }
+    
+    #about :nth-child(4) {
+        color: $primary-color;
+        font-size: 0.8rem;
+    }
+}

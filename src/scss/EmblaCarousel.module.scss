@@ -68,4 +68,75 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+@media screen and (max-width: 1224px) {
+    #embla {
+        width: 22rem;
+        margin-top: 3rem;
+        margin-left: 0;
+        cursor: grab;
+        position: relative;
+    }
+    
+    #embla__viewport {
+        overflow: hidden;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    #embla__container {
+        backface-visibility: hidden;
+        display: flex;
+        touch-action: pan-y;
+    }
+    
+    .embla__slide {
+        flex: 0 0 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 1rem 2rem;
+        margin-right: 0.5rem;
+        position: relative;
+        border: 1px solid white;
+        box-sizing: border-box;
+    }
+    
+    .embla__slide__img {
+        display: block;
+        height: 1.5rem;
+        object-fit: cover;
+    }
+    
+    .embla__slide__number,
+    .embla__slide__text {
+        text-align: center;
+        pointer-events: none;
+        margin-top: 0.2rem;
+    }
+    
+    .embla__slide__number > span,
+    .embla__slide__text > span {
+        color: $primary-color;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 0.8rem;
+        display: block;
+    }
+    
+    .embla__buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+}
   
