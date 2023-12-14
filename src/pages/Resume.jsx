@@ -42,9 +42,9 @@ const Resume = () => {
     return (
         <div id={styles['resume-page']}>
             <div id={styles['resume']}>
-                <Document file={resume} onLoadSuccess={onDocumentLoadSuccess} options={options}>
-                    <Page pageNumber={pageNumber} />
-                </Document>
+                    <Document file={resume} onLoadSuccess={onDocumentLoadSuccess} options={options}>
+                        <Page pageNumber={pageNumber} />
+                    </Document>
                 <div id={styles['page-nav']}>
                     <p>
                         Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
