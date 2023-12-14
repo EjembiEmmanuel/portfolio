@@ -48,11 +48,9 @@ const Navbar = () => {
             <div id={styles['logo-container']}>
                 <p id={styles['logo-text']}>Oche Codes</p>
                 {isTabletOrMobile && (
-                    <div>
-                        <button onClick={toggleNav}>
-                            <img src={menuIcon} alt="Menu icon" />
-                        </button>
-                    </div>
+                    <button id={styles['menu']} onClick={toggleNav}>
+                        <img src={menuIcon} alt="Menu icon" />
+                    </button>
                 )}
             </div>
             <div id={styles['links-container']}>
